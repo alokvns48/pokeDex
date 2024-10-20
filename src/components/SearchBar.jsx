@@ -39,7 +39,7 @@ const SearchBar = ({ allPokemon, setSearchResults }) => {
       <input
         type="text"
         className="border-2 border-gray-300 rounded-lg p-3 w-full max-w-md text-gray-700 shadow-lg focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent transition duration-300 ease-in-out sm:w-3/4 md:w-2/3 lg:w-1/2 mx-2"
-        placeholder="Search Pokémon by name or ID..."
+        placeholder="Search Pokemon by name or ID..."
         value={searchTerm}
         onChange={onChange}
       />

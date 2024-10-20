@@ -32,10 +32,10 @@ const App = () => {
         );
 
         setDetailedPokemon(validPokemonList);
-        setFilterResults(validPokemonList); 
+        setFilterResults(validPokemonList);
         setSearchResults(validPokemonList);
       } catch (error) {
-        console.error("Error fetching Pokémon data: ", error);
+        console.error("Error fetching Pokemon data: ", error);
       }
     };
     fetchPokemonData();
@@ -58,7 +58,7 @@ const App = () => {
   return (
     <div className="">
       <Navbar />
-      
+
       <SearchBar
         allPokemon={detailedPokemon}
         setSearchResults={setSearchResults}
@@ -69,9 +69,7 @@ const App = () => {
         setFilterResults={setFilterResults}
       />
 
-
       <PokemonList pokemonData={currentPokemon} />
-
 
       {totalPages > 1 && (
         <Pagination
